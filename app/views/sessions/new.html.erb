@@ -1,9 +1,12 @@
-<h1>Log In</h1>
-
-<%= form_for(:session, html: { role: "form"},  url: login_path) do |f| %>
-  <div>
-    <%= f.label :id, "User ID" %>
-    <%= f.text_field :id, placeholder: "Enter User ID" %>
+<div class="row">
+      <div class="col-md-6 mx-auto">
+        <h3>Log In</h3>
+        <%= form_for(:session, html: { role: "form"},  url: login_path) do |f| %>
+          <div class = "form-group">
+            <%= f.label :id, "User ID" %>
+            <%= f.text_field :id, placeholder: "Enter User ID", class: 'form-control' %>
+          </div>
+          <%= f.button "Log in", class: "btn btn-primary" %>
+        <% end %>
   </div>
-  <%= f.submit "Log in" %>
-<% end %>
+</div>
