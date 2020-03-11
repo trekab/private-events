@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   post 'events/new', to: 'events#create'
   get 'events/index', to: 'events#index'
   get 'events/:id', to: 'events#show'
+  resources :users, only: [:new,:show]
 end
