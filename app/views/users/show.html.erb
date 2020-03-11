@@ -2,6 +2,9 @@
   <%= current_user.first_name %>
 </h2>
 <%= link_to 'Logout', logout_path, method: :delete %>
-<% @users.each do |user| %>
-  <p>Hello <%= user.first_name %>!</p>
+<% @user.events.each do |event| %>
+  <h3><%= event.title %></h3>
+  <p><%= event.description %></p>
+  <p><%= event.venue %></p>
+  <p><%= event.date %></p>
 <% end %>
