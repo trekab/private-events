@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     user = User.find_by(id: params[:session][:id])
     if user
       session[:user_id] = user.id
-      redirect_to users_show_path
+      redirect_to events_index_path
     else
       render 'new'
     end

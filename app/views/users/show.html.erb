@@ -4,3 +4,12 @@
   <p><%= event.venue %></p>
   <p><%= event.date %></p>
 <% end %>
+
+<h2>Attending events</h2>
+
+<% @user.attended_event.each do |event| %>
+  <h3><%= event.title %></h3>
+  <p><%= event.description %></p>
+  <p><%= event.venue %></p>
+  <p><%= event.date %></p>
+<% end %>
