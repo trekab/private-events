@@ -42,9 +42,4 @@ RSpec.describe Event, type: :model do
       expect(event.save).to eq(false)
     end
   end
-
-  # context 'It has Associations' do
-  #   it { should belong_to(:creator) }
-  #   it { should have_many(:event_attendees) }
-  # end
 end
