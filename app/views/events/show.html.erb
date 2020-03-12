@@ -1,0 +1,14 @@
+
+    <div class="card-body">
+    <h3><%= @event.title %></h3>
+    <div>
+        Creator: <%= @event.creator.first_name %>
+    </div>
+    <br>
+    <h4>Attendees</h4>
+    <p><%= @event.description%></p>
+    <ul>
+      <% @attendees.each do |attendee| %>
+          <li><%= attendee.first_name%></li>  
+      <% end %>
+    </ul>
