@@ -1,5 +1,5 @@
 require 'rails_helper'
- 
+
 RSpec.describe 'Create an event', type: :feature do
   scenario 'new event' do
     user = User.create(first_name: 'John', last_name: 'Doe', email: 'johndoe@ymail.com', password: 'password')
@@ -15,5 +15,4 @@ RSpec.describe 'Create an event', type: :feature do
     click_on 'Create'
     expect(page).to have_content('Test Event')
   end
-
 end

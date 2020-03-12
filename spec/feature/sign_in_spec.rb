@@ -1,5 +1,5 @@
 require 'rails_helper'
- 
+
 RSpec.describe 'Signing in a user', type: :feature do
   scenario 'valid user' do
     user = User.create(first_name: 'John', last_name: 'Doe', email: 'johndoe@ymail.com', password: 'password')
