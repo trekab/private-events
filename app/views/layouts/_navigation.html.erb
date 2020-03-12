@@ -10,7 +10,7 @@
         <li class="mr-3"><%= link_to 'Log out', logout_path, method: :delete %></li>
         <li class="badge badge-secondary"><%= current_user.first_name %></li>
       <% else %>
-        <li class="mr-3"><%= link_to 'Log in', login_path %></li>
+        <li class="mr-3"><%= link_to 'Log In', login_path %></li>
         <li><%= link_to 'Sign Up', users_new_path %></li>
       <% end %>
     </ul>

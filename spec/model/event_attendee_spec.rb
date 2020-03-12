@@ -26,8 +26,8 @@ RSpec.describe EventAttendee, type: :model do
     end
   end
 
-  context 'It has Associations' do
-    it { should belong_to( :attendee).class_name('User') }
-    it { should belong_to(:attended_event).class_name('Event') }
-  end
+  # context 'It has Associations' do
+  #   it { should belong_to( :attendee).class_name('User') }
+  #   it { should belong_to(:attended_event).class_name('Event') }
+  # end
 end
